@@ -5,14 +5,10 @@ public class percolation{
     private final int n;
     private final boolean[] openSites;
     private int openCount;
-    pprivate final WeighhtedQuickUionUF uf;
-    public percolation(int n){
-        if (n <= 0) {
-            throw new IllegalArgumentException("Grid size must be greater than 0");
-        }
-        this.n = n;
-        this.openSites = new boolean[n * n];
-        this.openCount = 0;
-        this.uf = new WeightedQuickUnionUF(n * n + 2); // +2 for virtual top and bottom
-    }
+    private final WeightedQuickUnionUF uf;
+    private final WeightedQickUnioUF ufFull;
+
+    private final int virtualTop;
+    private final int virtualBottom;
+    
 }
